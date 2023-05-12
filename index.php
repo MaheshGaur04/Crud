@@ -82,7 +82,7 @@ else{
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
-      <form action="/crud/index.php" method="POST">
+      <form action="/index.php" method="POST">
       <div class="modal-body">
       <input type="hidden" name="snoEdit" id="snoEdit">
             <div class="mb-3">
@@ -105,7 +105,7 @@ else{
 </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/crud/PHP-logo.svg.png" height="40px"></a>
+          <a class="navbar-brand" href="#"><img src="/PHP-logo.svg.png" height="40px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -158,7 +158,7 @@ else{
 
       <div class="container my-4">
         <h2>Add a Note to iNotes</h2>
-        <form action="/crud/index.php" method="POST">
+        <form action="/index.php" method="POST">
             <div class="mb-3">
               <label for="title" class="form-label">Note</label>
               <input type="text" name="title" class="form-control" id="title" aria-describedby="emailHelp">
@@ -228,7 +228,7 @@ else{
           sno=e.target.id.substr(1,);
           if(confirm("Are you sure?")){
             console.log("Yes");
-            window.location=`/crud/index.php?delete=${sno}`;
+            window.location=`/index.php?delete=${sno}`;
           }
           else{
             console.log("No")
